@@ -47,7 +47,7 @@ const App = ()=>{
         newPhotoList.push(result);
         setPhotos(newPhotoList);
 
-        //window.location.reload();
+        window.location.reload();
         
       }
 
