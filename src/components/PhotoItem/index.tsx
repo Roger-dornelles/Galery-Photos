@@ -1,8 +1,4 @@
 import * as C from './styles';
-import * as Photos from '../../services/photos';
-
-
-
 
 type Props = {
     url: string;
