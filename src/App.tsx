@@ -53,7 +53,6 @@ const App = ()=>{
 
     }
 
-
   }
 
   const handleDeleteClick = async (name: string) => {
@@ -72,7 +71,6 @@ const App = ()=>{
           <input type="submit" value="Enviar" />
           {upload && "Enviando....."}
         </C.UploadForm>
-
 
         {loading &&
           <C.ScreenWarning>

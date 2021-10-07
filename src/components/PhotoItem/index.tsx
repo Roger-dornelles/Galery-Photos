@@ -9,9 +9,7 @@ type Props = {
 
 export const PhotoItem = ({url, name, onDelete}: Props) => {
 
-
     return (
-
         <C.Container>
             <img src={url} alt={name} />
             {name}
