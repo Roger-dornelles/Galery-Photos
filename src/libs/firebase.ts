@@ -1,6 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getStorage } from 'firebase/storage';
 
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
@@ -10,7 +19,8 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_FIREBASE_APPID
 };
 
+
+
 const firebaseApp = initializeApp(firebaseConfig);
 
 export const storage = getStorage(firebaseApp);
-

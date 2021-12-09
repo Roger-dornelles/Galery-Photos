@@ -29,7 +29,5 @@ export const Container = styled.div`
         color: #fff;
         background-color: #ea3e39;
     }
-
-
 `;
 

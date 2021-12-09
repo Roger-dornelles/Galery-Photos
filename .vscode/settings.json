@@ -1,7 +1,9 @@
 {
     "git.ignoreLimitWarning": true,
     "cSpell.words": [
+        "APIKEY",
         "arquivo",
+        "AUTHDOMAIN",
         "cadastradas",
         "Carregando",
         "Enviando",
@@ -9,7 +11,10 @@
         "Fotos",
         "Galeria",
         "imeges",
+        "MESSAGINGSENDERID",
         "permitido",
+        "PROJECTID",
+        "STORAGEBUCKET",
         "Tipo"
     ]
 }
