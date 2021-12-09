@@ -7,7 +7,7 @@ import { ref, listAll, getDownloadURL, uploadBytes, deleteObject } from 'firebas
 export const getAll = async ()=>{
     let list: Photo[] = [];
 
-    const imagesFolder = ref(storage, 'images');
+    const imagesFolder = ref(storage, '/images');
     const photoList = await listAll(imagesFolder);
     
     for(let i in photoList.items){
@@ -52,7 +52,7 @@ export const insert = async (file: File)=>{
 export const deletePhoto = async (name: string)=>{
 
 
-    let newFile = ref(storage,`images/${name}`);
+    let newFile = ref(storage,`/images/${name}`);
     await deleteObject(newFile);
 
 }
